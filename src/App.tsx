@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./GlobalStyles/GlobalStyles";
 import { Auth } from "./components/Auth/Auth";
+import { InfoForm } from "./components/InfoForm/InfoForm";
 function App() {
   const theme = {
     colors: {
@@ -17,7 +18,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-        <Auth />
+        <InfoForm/>
     </ThemeProvider>
   );
 }
